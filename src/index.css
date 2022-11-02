@@ -1,0 +1,135 @@
+/* * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+} */
+
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --dark-blue: rgb(1, 1, 61);
+  --color-orange: rgb(255, 119, 34);
+}
+
+
+
+/* start component Header */
+header {
+  background-color: var(--dark-blue);
+}
+header .logo .Link h3 span {
+  color: var(--color-orange);
+}
+header .nav {
+  margin-bottom: -15px !important;
+}
+header .nav #listGroup {
+  list-style: none;
+  display: flex;
+  text-transform: capitalize;
+}
+header .nav #listGroup li {
+  font-size: 17px;
+  margin-top: 5px !important;
+  transform: scale(1);
+  transition: 0.5s;
+}
+header .nav #listGroup li:hover {
+  transform: scale(1.1);
+
+}
+header .nav #listGroup li:not(:last-child) {
+  margin-right: 10px;
+}
+header .nav #listGroup li:not(:first-child) {
+  margin-left: 10px !important;
+}
+header .nav #listGroup li span {
+  color: var(--color-orange);
+}
+header .nav #listGroup li a {
+  text-decoration: none;
+  color: #fff;
+}
+header .nav #listGroup li a:hover{
+  color: var(--color-orange) !important;
+}
+header .nav #listGroup li a p {
+  font-size: 12px;
+  margin-top: -5px !important;
+  margin-left: -5px !important;
+}
+header #bar {
+  cursor: pointer;
+}
+.activeLink {
+  color: var(--color-orange) !important;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+
+@media(max-width:991px) {
+  header .menuIcon {
+    display: block !important;
+  }
+  header .nav #listGroup {
+    display: block;
+    position: fixed;
+    top: 71px;
+    left: -400px;
+    width: 400px;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    padding: 40px 50px;
+    transition: 0.5s;
+  }
+  header .nav #listGroup.active {
+    left: 0;
+  }
+  header .nav #listGroup li {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  header .nav #listGroup li:nth-child(1) {
+    margin-left: 10px;
+  }
+  header .nav #listGroup li:last-child {
+    position: absolute;
+    border-top: 1px solid gainsboro;
+    padding: 20px 0;
+    width: 200px;
+  }
+}
+@media(max-width:770px) {
+  header .nav #listGroup {
+    top: 70px;
+  }
+}
+@media(max-width:630px) {
+  header .nav #listGroup {
+    top: 69px;
+  }
+}
+@media(max-width:490px) {
+  header .nav #listGroup {
+    top: 68px;
+  }
+}
+@media(max-width:3520px) {
+  header .nav #listGroup {
+    top: 67px;
+  }
+}
+/* end component Header */
+
+
+/* start component footer */
+footer {
+  background-color: var(--dark-blue);
+
+}
+/* end component footer */
