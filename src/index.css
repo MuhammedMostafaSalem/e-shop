@@ -130,6 +130,55 @@ header #bar {
 /* start component footer */
 footer {
   background-color: var(--dark-blue);
-
 }
 /* end component footer */
+
+
+
+
+/* start login page */
+.login {
+  padding: 75px 27rem;
+}
+.login .form {
+  background-color: rgb(241, 238, 238);
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.login .form h3 {
+  color: var(--color-orange);
+}
+.login .form .formControl {
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 10px !important;
+  margin: 0 80px;
+}
+.login .form .formControl:focus {
+  box-shadow: none;
+}
+.login .form .btn {
+  width: 70%;
+  border-radius: 10px;
+  margin-left: 14px;
+  margin-bottom: 10px;
+}
+.login .form .links a {
+  text-decoration: none;
+  margin-left: -200px;
+  color: #000;
+}
+.login .form .links,
+.login .form .notHave {
+  transform: scale(1) !important;
+  transition: 0.5s;
+}
+.login .form .links:hover,
+.login .form .notHave:hover {
+  transform: scale(1.02) !important;
+}
+.login .form .btn-google {
+  background-color: var(--color-orange);
+  color: #fff;
+}
+/* end login page */
