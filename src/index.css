@@ -140,6 +140,9 @@ footer {
 .login {
   padding: 75px 27rem;
 }
+.register {
+  padding: 107px 27rem;
+}
 .login .form {
   background-color: rgb(241, 238, 238);
   padding: 20px 0;
