@@ -143,6 +143,9 @@ footer {
 .register {
   padding: 107px 27rem;
 }
+.reset {
+  padding: 155px 27rem;
+}
 .login .form {
   background-color: rgb(241, 238, 238);
   padding: 20px 0;
@@ -183,5 +186,8 @@ footer {
 .login .form .btn-google {
   background-color: var(--color-orange);
   color: #fff;
+}
+.login .form .pLinks {
+  padding: 0 80px;
 }
 /* end login page */
